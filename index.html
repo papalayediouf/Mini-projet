@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-projet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed z-3 w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo-electro.avif" alt="logo" width="60px" height="60px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#type">Types de produit</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Produits
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="detail.html">Détails du produit </a> </li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <!-- <a href="" class="d-flex "><i class="bi bi-cart-check-fill"></i></a> -->
+              
+              </li>
+            </ul>
+            <a href="" class="d-flex "><i class="bi bi-cart-check-fill mx-5"></i></a>
+            <button class="btn btn-outline-success me-2" type="submit">
+
+              <a href="inscription.html" class="text-decoration-none"><i class="bi bi-person-fill"></i>Inscription </a>
+            </button>         
+            <form class="d-flex" role="search">
+              <!-- <button class="btn btn-outline-success me-2" type="submit">
+               
+              </button> -->
+              <input class="form-control me-2" type="search" placeholder="RECHERCHE" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+      <!-- header -->
+
+      <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="Z-index">
+                    <p class="h1 text-light  text-justify  fw-bold">Bienvenue sur Electro Shop</p>
+                    <p class="text-light  text-justify display">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, excepturi! <br> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing  Asperiores, excepturi! <br> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, excepturi! <br> 
+                    </p>
+                    <p>
+                      <a href="" class="btn btn-warning text-light">Lorem, ipsum.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </header>
+
+      <!-- Section carrousel -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="text-center display-1 h1 fw-bold"><span class="text-primary">P</span>roduits</p>
+            <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. saepe architecto doloremque iure?</p>
+      
+            <div id="carouselExampleAutoplaying" class="carousel slide my-5" data-bs-ride="carousel">
+              <div class="carousel-inner bloc">
+                <div class="carousel-item active"> 
+                  <img src="images/electro-2.jpg" class="d-block  produit"  alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/electro-1.jpg" class="d-block  produit" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/electro-3.avif" class="d-block  produit" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- section2 -->
+
+
+      <section id="section2">
+        <h1 class="text-center">Liste de <span class="text-primary">Produits</span></h1>
+        <div class="container d-flex justify-content-center">
+          <div class="row d-flex justify-content-center">
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="images/electro-3.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nom du Produit</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                  <p>Prix: 200 000F</p>
+                </div>
+        
+                <div class="card-body">
+                  <a href="#" class="card-link">Acheter</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="images/electro-4.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nom du Produit</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                  <p>Prix 330 000F</p>
+                </div>
+        
+                <div class="card-body">
+                  <a href="#" class="card-link">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="images/electro-5.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nom du Produit</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                  <p>Prix 330 000F</p>
+                </div>
+        
+                <div class="card-body">
+                  <a href="#" class="card-link">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="images/electro-6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nom du Produit</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                  <p>Prix 330 000F</p>
+                </div>
+        
+                <div class="card-body">
+                  <a href="#" class="card-link">Acheter</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="images/electro-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nom du Produit</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                  <p>Prix 330 000F</p>
+                </div>
+        
+                <div class="card-body">
+                  <a href="#" class="card-link">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="images/bg-menager.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nom du Produit</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                  <p>Prix 330 000F</p>
+                </div>
+        
+                <div class="card-body">
+                  <a href="#" class="card-link">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- les plus acheter -->
+      <div class="container-fluid my-5">
+        <h1 class="text-center">Les plus <span class="text-primary">acheter</span> </h1>
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-5">
+         
+              <img src="images/type1.avif" alt="" width="80%" class="rounded">
+          
+        
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-5">
+         
+            <img src="images/electro-3.avif" alt="" width="80%" class="rounded">
+        
+      
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-5">
+         
+          <img src="images/appareils-menagers-isole-fond-noir.jpg" alt="" width="80%" class="rounded">
+      
+    
+      </div>
+        </div>
+      </div>
+
+      <!-- type -->
+
+      <section id="type" class="my-5">
+        <h1 class="text-center">Types de <span class="text-primary">Produits</span></h1>
+        <div class="container-fluid my-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="card" style="width: 19rem;">
+                <img src="images/type1.avif" class="card-img-top" alt="...">
+                <div class="card-body bg-primary">
+                  <h5 class="card-title text-center text-light">Lorem</h5>
+                </div>
+              
+                <div class="card-body">
+                  
+                  <a href="#" class="card-link btn btn-primary text-center">lorem</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="card" style="width: 19rem;">
+                <img src="images/tYPE3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-primary">
+                  <h5 class="card-title text-center text-light">Lorem</h5>
+                </div>
+              
+                <div class="card-body">
+                  
+                  <a href="#" class="card-link btn btn-primary text-center">lorem</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="card" style="width: 19rem;">
+                <img src="images/TYPE2.avif" class="card-img-top" alt="...">
+                <div class="card-body bg-primary">
+                  <h5 class="card-title text-center text-light">Lorem</h5>
+                </div>
+              
+                <div class="card-body">
+                  
+                  <a href="#" class="card-link btn btn-primary text-center">lorem</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- temoignage -->
+
+      <section id="temoignegs" class="my-5">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <p class="text-center display-1 h1 fw-bold">Nos <span class="text-primary">Clients</span></p>
+            <p class="text-center">Lorem, ipsum dolo</p>
+      
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="clients">
+                <img src="images/client1.avif" alt="" class="client">
+                <p class="citation text-muted text-center">
+                  Lorem im dolor sit. node <br>
+                  Lorem ipsum dolor sit. <br>
+                  Lorem ipsum dor sit. node <br>
+                  <i class="bi bi-quote text-primary"></i>
+                </p>
+                <p class="text-center">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="clients">
+                <img src="images/client3.avif" alt="" class="client">
+                <p class="citation text-muted text-center">
+                  Lorem im dolor sit. node <br>
+                  Lorem ipsum dor sit.  <br>
+                  Lorem ipsum dor sit. node <br>
+                  <i class="bi bi-quote text-primary"></i>
+                </p>
+                <p class="text-center">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+              <div class="clients">
+                <img src="images/client2.avif" alt="" class="client">
+                <p class="citation text-muted text-center">
+                  Lorem im dolor sit. node <br>
+                  Lorem ipsum dolor si <br>
+                  Lorem ipsum dor sit. node <br>
+                  <i class="bi bi-quote text-primary"></i>
+                </p>
+                <p class="text-center">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- inscriptions -->
+
+
+
+      <!-- connexion -->
+      <div class="container d-flex justify-content-center align-items-center flex-column ">
+        <h1 class="text-center d-flex j">Contact &nbsp; <span class="text-primary"> Us</span></h1> 
+        <div class="row text-light">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 p-3 bg-dark rounded">
+                  <img src="images/reparateur.avif" class="img-fluid rounded-start my-3" alt="..."  >
+                  <img src="images/reparateur2.avif" class="img-fluid rounded-start my-3" alt="..." >
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Noms</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom et prénom">
+                        <div id="emailHelp" class="form-text">Veillez mettre votre nom.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- footer -->
+
+      <footer id="footer" class="bg-dark text-light p-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="text-center">Contact</h5>
+              <p class="text-center">
+                <i class="bi bi-geo-alt-fill"></i> Dakar <br>
+                <i class="bi bi-telephone-fill"></i> +221 77 333 36 33 <br>
+                <i class="bi bi-envelope-at-fill"></i> prir@gmail.com
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-center">Nous siuvre</h5>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet. , ipsum. <br> 
+                Lorem ipsum dolor sit amet. , ipsum. <br> 
+                Lorem ipsum dolor sit amet. . <br> 
+              </p>
+              <p class="text-center">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-messenger"></i>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-tiktok"></i>
+              </p>
+            </div>
+
+            <div class="col-md-4">
+              <h5 class="text-center">Nos services</h5>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet. , ipsum. <br> 
+                Lorem ipsum dolor sit amet. , ipsum. <br> 
+                Lorem ipsum dolor sit amet. . <br> 
+              
+              </p>
+            </div>
+          </div>
+          <div class="row">
+           <div class="col">
+            <p class="text-center m-5">
+              <i class="bi bi-c-circle"></i> copyright 2024 Recerved by me lorem <br>
+              <i class="bi bi-c-circle"></i>  Recerved by me lorem
+            </p>
+           </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

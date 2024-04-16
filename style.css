@@ -1,0 +1,216 @@
+
+nav{
+    width: ;
+}
+
+/* header */
+
+header{
+    background-image: url(images/bg-menager.avif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+header::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0,0 , 0.6);
+    position: absolute;
+    z-index: 1;
+}
+.Z-index{
+    z-index: 2;
+
+}
+
+.produit{
+    height: 300px;
+    width: 360px;
+    margin: auto;
+    
+
+}
+/* .carousel-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+ 
+} */
+.bloc{
+    height: 300px;
+    width: 360px;
+    margin: auto;
+   
+}
+
+
+#carouselExampleAutoplaying{
+
+    background-color: black;
+    display: flex;
+    
+    justify-content: center;
+    border-radius: 5%;
+    box-shadow: 1px 1px 7px 1px;
+    border: solid 3px rgb(228, 222, 222);
+    width: 80%;
+    height: 350px;
+    margin: auto;
+}
+
+/* sectio2 */
+
+.card-img-top{
+    height: 200px;
+}
+
+/* details */
+.details1{
+    display: flex;
+    flex-direction:row ;
+    box-shadow: 1px 1px 4px 1px;
+    padding: 25px;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.details{
+    border-radius: 20px;
+    width: 15rem;
+    height: 15rem;
+}
+.chek{
+    list-style-type: none;
+    display: flex;
+}
+
+/* temoignage */
+
+.clients{
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgb(234, 228, 228);
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 1px 1px 2px 1px;
+}
+.client{
+
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin: 10px;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+/* connexion */
+
+.widthH{
+    width: 60%;
+    background-color: rgb(42, 114, 163);
+}
+
+.backk{
+    background-image: url(images/bg-menager.avif);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.backk::before{
+    content: "";
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0, 0,0 , 0.7);
+    position: absolute;
+ 
+
+    left: 0;
+    z-index: 1;
+}
+.backkk{
+    z-index: 2;
+   
+}
+.input{
+    width: 17rem;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin:  20px;
+    border: none;
+    
+}
+
+.form{
+   background-color: rgba(230, 223, 223, 0.4);
+    width: 20rem;
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+}
+.buttonN{
+    
+    width: 10rem;
+}
+a{
+    text-decoration: none;
+}
+
+/* inscription */
+.forms{
+    background-color: rgba(230, 223, 223, 0.4);
+    border-radius: 10px;
+  
+}
+textarea{
+    opacity: 0.3;
+    color: black;
+    border-radius: 10px;
+    margin: 20px;
+}
+.inputs{
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+
+}
+
+.div1 , .div2{
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+  .div1, .div2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* DETAILS */
+
+    .details1{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        font-size: 10px;
+    }
+}
